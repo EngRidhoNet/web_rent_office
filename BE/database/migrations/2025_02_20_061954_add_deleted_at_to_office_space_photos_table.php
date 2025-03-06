@@ -11,17 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('office_space_photos', function (Blueprint $table) {
-            $table->id();
-            $table->string('photo');
-            $table->foreignId('office_space_id')->constrained()->cascadeOnDelete();
+        Schema::table('office_space_photos', function (Blueprint $table) {
             $table->softDeletes();
-            $table->timestamps();
         });
     }
 
+    /**
+     * Reverse the migrations.
+     */
     public function down(): void
     {
-        Schema::dropIfExists('office_space_photos');
+        Schema::table('office_space_photos', function (Blueprint $table) {
+            $table->dropSoftDeletes();
+        });
     }
 };
