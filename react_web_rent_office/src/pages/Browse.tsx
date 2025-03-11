@@ -154,6 +154,7 @@ export default function Browse() {
                 </div>
                 <div className="swiper w-full">
                     <div className="swiper-wrapper">
+                        
                         <div className="swiper-slide !w-fit first-of-type:pl-[calc((100%-1130px-60px)/2)] last-of-type:pr-[calc((100%-1130px-60px)/2)]">
                             <a href="city-details.html" className="card">
                                 <div className="relative flex shrink-0 w-[230px] h-[300px] rounded-[20px] overflow-hidden">
