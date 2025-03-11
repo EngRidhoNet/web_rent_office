@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <nav class="bg-white">
+        <div class="flex items-center justify-between w-full max-w-[1130px] py-[22px] mx-auto">
+            <a href="index.html">
+                <img src="assets/images/logos/logo.svg" alt="logo">
+            </a>
+            <ul class="flex items-center gap-[50px] w-fit">
+                <li>
+                    <a href="">Browse</a>
+                </li>
+                <li>
+                    <a href="">Popular</a>
+                </li>
+                <li>
+                    <a href="">Categories</a>
+                </li>
+                <li>
+                    <a href="">Events</a>
+                </li>
+                <li>
+                    <a href="view-booking-details.html">My Booking</a>
+                </li>
+            </ul>
+            <a href="#" class="flex items-center gap-[10px] rounded-full border border-[#000929] py-3 px-5">
+                <img src="assets/images/icons/call.svg" class="w-6 h-6" alt="icon">
+                <span class="font-semibold">Contact Us</span>
+            </a>
+        </div>
+    </nav>
+    <div id="Banner" class="relative w-full h-[240px] flex items-center shrink-0 overflow-hidden -mb-[50px]">
+        <h1 class="text-center mx-auto font-extrabold text-[40px] leading-[60px] text-white mb-5 z-20">View Your Booking Details</h1>
+        <div class="absolute w-full h-full bg-[linear-gradient(180deg,_rgba(0,0,0,0)_0%,#000000_91.83%)] z-10"></div>
+        <img src="assets/images/thumbnails/thumbnail-details-5.png" class="absolute w-full h-full object-cover object-top" alt="">
+    </div>
+    <section id="Check-Booking" class="relative flex flex-col w-[930px] shrink-0 gap-[30px] mx-auto mb-[100px] z-20">
+        <form action="" class="flex items-end rounded-[20px] border border-[#E0DEF7] p-[30px] gap-[16px] bg-white">
+            <div class="flex flex-col w-full gap-2">
+                <label for="name" class="font-semibold">Booking TRX ID</label>
+                <div class="flex items-center rounded-full border border-[#000929] px-5 gap-[10px] transition-all duration-300 focus-within:ring-2 focus-within:ring-[#0D903A]">
+                    <img src="assets/images/icons/receipt-text-black.svg" class="w-6 h-6" alt="icon">
+                    <input type="text" name="name" id="name" class="appearance-none outline-none w-full py-3 font-semibold placeholder:font-normal placeholder:text-[#000929]" placeholder="Write your booking trx id">
+                </div>
+            </div>
+            <div class="flex flex-col w-full gap-2">
+                <label for="phone" class="font-semibold">Phone Number</label>
+                <div class="flex items-center rounded-full border border-[#000929] px-5 gap-[10px] transition-all duration-300 focus-within:ring-2 focus-within:ring-[#0D903A]">
+                    <img src="assets/images/icons/call-black.svg" class="w-6 h-6" alt="icon">
+                    <input type="tel" name="phone" id="phone" class="appearance-none outline-none w-full py-3 font-semibold placeholder:font-normal placeholder:text-[#000929]" placeholder="Write your valid number">
+                </div>
+            </div>
+            <button type="submit" class="flex items-center justify-center rounded-full p-[12px_30px] gap-3 bg-[#0D903A] font-bold text-[#F7F7FD]">
+                <span class="text-nowrap">Check Booking</span>
+            </button>
+        </form>
+        <div id="Result" class="grid grid-cols-2 gap-[30px]">
+            <div class="flex flex-col h-fit shrink-0 rounded-[20px] border border-[#E0DEF7] p-[30px] gap-[30px] bg-white">
+                <div class="flex items-center gap-4">
+                    <div class="flex shrink-0 w-[140px] h-[100px] rounded-[20px] overflow-hidden">
+                        <img src="assets/images/thumbnails/thumbnail-details-4.png" class="w-full h-full object-cover" alt="thumbnail">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p class="font-bold text-xl leading-[30px]">Angga Park Central <br> Master Capitalize</p>
+                        <div class="flex items-center gap-[6px]">
+                            <img src="assets/images/icons/location.svg" class="w-6 h-6" alt="icon">
+                            <p class="font-semibold">Jakarta Pusat</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-[#F6F5FD]">
+                <div class="flex flex-col gap-4">
+                    <h2 class="font-bold">Customer Details</h2>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="font-semibold">Full Name</h3>
+                        <div class="flex items-center rounded-full px-5 py-3 gap-[10px] bg-[#F7F7FD]">
+                            <img src="assets/images/icons/security-user-black.svg" class="w-6 h-6" alt="icon">
+                            <p class="font-semibold">Angga Risky Setiawan</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 for="phone" class="font-semibold">Phone Number</h3>
+                        <div class="flex items-center rounded-full px-5 py-3 gap-[10px] bg-[#F7F7FD]">
+                            <img src="assets/images/icons/call-black.svg" class="w-6 h-6" alt="icon">
+                            <p class="font-semibold">6289123981239</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 for="date" class="font-semibold">Started At</h3>
+                        <div class="flex items-center rounded-full px-5 py-3 gap-[10px] bg-[#F7F7FD]">
+                            <img src="assets/images/icons/calendar-black.svg" class="w-6 h-6" alt="icon">
+                            <p class="font-semibold">12 July 2024</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 for="date" class="font-semibold">Ended At</h3>
+                        <div class="flex items-center rounded-full px-5 py-3 gap-[10px] bg-[#F7F7FD]">
+                            <img src="assets/images/icons/calendar-black.svg" class="w-6 h-6" alt="icon">
+                            <p class="font-semibold">20 July 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-[#F6F5FD]">
+                <div class="flex items-center gap-3">
+                    <img src="assets/images/icons/shield-tick.svg" class="w-[30px] h-[30px]" alt="icon">
+                    <p class="font-semibold leading-[28px]">Privasi Anda aman bersama kami.</p>
+                </div>
+            </div>
+            <div class="flex flex-col h-fit shrink-0 rounded-[20px] border border-[#E0DEF7] p-[30px] gap-[30px] bg-white">
+                <h2 class="font-bold">Order Details</h2>
+                <div class="flex flex-col gap-5">
+                    <div class="flex items-center justify-between">
+                        <p class="font-semibold">Status Pembayaran</p>
+                        <p class="rounded-full w-fit p-[6px_16px] bg-[#FF852D] font-bold text-sm leading-[21px] text-[#F7F7FD]">PENDING</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="font-semibold">Status Pembayaran</p>
+                        <p class="rounded-full w-fit p-[6px_16px] bg-[#0D903A] font-bold text-sm leading-[21px] text-[#F7F7FD]">SUCCESS</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="font-semibold">Booking TRX ID</p>
+                        <p class="font-bold">FO1239812938</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="font-semibold">Duration</p>
+                        <p class="font-bold">20 Days Working</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="font-semibold">Total Amount</p>
+                        <p class="font-bold text-[22px] leading-[33px] text-[#0D903A]">Rp 249.660</p>
+                    </div>
+                </div>
+                <hr class="border-[#F6F5FD]">
+                <h2 class="font-bold">Bonus Packages For You</h2>
+                <div class="flex justify-between">
+                    <div class="flex items-center gap-4">
+                        <img src="assets/images/icons/coffee.svg" class="w-[34px] h-[34px]" alt="icon">
+                        <div class="flex flex-col gap-[2px]">
+                            <p class="font-bold">Extra Snacks</p>
+                            <p class="text-sm leading-[21px]">Work-Life Balance</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/images/icons/group.svg" class="w-[34px] h-[34px]" alt="icon">
+                        <div class="flex flex-col gap-[2px]">
+                            <p class="font-bold">Free Move</p>
+                            <p class="text-sm leading-[21px]">Anytime 24/7</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-[#F6F5FD]">
+                <a href="" class="flex items-center justify-center w-full rounded-full border border-[#000929] p-[12px_20px] gap-3 bg-white font-semibold">
+                    <img src="assets/images/icons/call-black.svg" class="w-6 h-6" alt="icon">
+                    <span>Call Customer Service</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
